@@ -23,10 +23,10 @@ test('add', () => {
     // expect(sub).toHaveBeenCalledWith(4, 2);
 });
 
-//MOCKING MODULES
-jest.mock('./fake');
-import { mockingModules } from '../../fake';
+// //MOCKING MODULES
+// jest.mock('./fake');
+// import { mockingModules } from '../../fake';
 
-test('Mocking Modules', () => {
-    expect(mockingModules('Tyler')).toBe('I am Tyler and I am learning JEST');
-});
+// test('Mocking Modules', () => {
+//     expect(mockingModules('Tyler')).toBe('I am Tyler and I am learning JEST');
+// });
