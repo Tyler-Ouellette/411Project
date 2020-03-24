@@ -1,0 +1,516 @@
+{
+	"info": {
+		"_postman_id": "f5c28f78-9415-4ec7-9fd8-7da385082577",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type JSON",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"ADD POST\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Add Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type JSON",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTNjNGE5MTk4YjA1NDMwMWQ0MzViIn0sImlhdCI6MTU4NDE0MzM2NiwiZXhwIjoxNTg0NTAzMzY2fQ.IwexuRrA_K3vhwK54tAGsa4Gf_ow1Kcvn8GHtlrZdR0",
+						"description": "TEST USER AUTH",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"THIS IS A DEV TEST TEST POST\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				},
+				"description": "I think as long as any x-auth-token is valid, doesn't matter which user tests this. "
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Get All Posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				},
+				"description": "I think as long as any x-auth-token is valid, doesn't matter which user tests this. "
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Get Post By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTNjNGE5MTk4YjA1NDMwMWQ0MzViIn0sImlhdCI6MTU4NDE0MzM2NiwiZXhwIjoxNTg0NTAzMzY2fQ.IwexuRrA_K3vhwK54tAGsa4Gf_ow1Kcvn8GHtlrZdR0",
+						"description": "TEST USER AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5e6cc50bee541d6eb9a7c0ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5e6cc50bee541d6eb9a7c0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5e1664923b8f5550dcac92ed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5e1664923b8f5550dcac92ed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTNjNGE5MTk4YjA1NDMwMWQ0MzViIn0sImlhdCI6MTU4NDE0MzM2NiwiZXhwIjoxNTg0NTAzMzY2fQ.IwexuRrA_K3vhwK54tAGsa4Gf_ow1Kcvn8GHtlrZdR0",
+						"description": "TEST USER AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5e6cc4ffee541d6eb9a7c0cd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5e6cc4ffee541d6eb9a7c0cd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5e6cc4d7ee541d6eb9a7c0cb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5e6cc4d7ee541d6eb9a7c0cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like a Post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/like/5e6cc50bee541d6eb9a7c0ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"like",
+						"5e6cc50bee541d6eb9a7c0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Like a Post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTNjNGE5MTk4YjA1NDMwMWQ0MzViIn0sImlhdCI6MTU4NDE0MzM2NiwiZXhwIjoxNTg0NTAzMzY2fQ.IwexuRrA_K3vhwK54tAGsa4Gf_ow1Kcvn8GHtlrZdR0",
+						"description": "TEST USER AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/like/5e6cc50bee541d6eb9a7c0ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"like",
+						"5e6cc50bee541d6eb9a7c0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unlike Post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/unlike/5e6cc50bee541d6eb9a7c0ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"unlike",
+						"5e6cc50bee541d6eb9a7c0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Unlike Post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTNjNGE5MTk4YjA1NDMwMWQ0MzViIn0sImlhdCI6MTU4NDE0MzM2NiwiZXhwIjoxNTg0NTAzMzY2fQ.IwexuRrA_K3vhwK54tAGsa4Gf_ow1Kcvn8GHtlrZdR0",
+						"description": "TEST USER AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/unlike/5e6cc50bee541d6eb9a7c0ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"unlike",
+						"5e6cc50bee541d6eb9a7c0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment On Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Hi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/5e6cc50bee541d6eb9a7c0ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"5e6cc50bee541d6eb9a7c0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Comment On Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTNjNGE5MTk4YjA1NDMwMWQ0MzViIn0sImlhdCI6MTU4NDE0MzM2NiwiZXhwIjoxNTg0NTAzMzY2fQ.IwexuRrA_K3vhwK54tAGsa4Gf_ow1Kcvn8GHtlrZdR0",
+						"description": "TEST USER AUTH",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Hi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/5e6cc50bee541d6eb9a7c0ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"5e6cc50bee541d6eb9a7c0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTM4OTUyMzdhODU1MmI2MzlhNzk4In0sImlhdCI6MTU4Mzk1NTM4NSwiZXhwIjoxNTg0MzE1Mzg1fQ.QQ5v4mHFJoJMdiQAR5QKfiQNz-4tdkvVA-Qj2HrMwkA",
+						"description": "olet AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/5e6cc50bee541d6eb9a7c0ce/5e6d1a392a15d1bc33192d72",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"5e6cc50bee541d6eb9a7c0ce",
+						"5e6d1a392a15d1bc33192d72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Delete Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWU2OTNjNGE5MTk4YjA1NDMwMWQ0MzViIn0sImlhdCI6MTU4NDE0MzM2NiwiZXhwIjoxNTg0NTAzMzY2fQ.IwexuRrA_K3vhwK54tAGsa4Gf_ow1Kcvn8GHtlrZdR0",
+						"description": "TEST USER AUTH",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/5e6cc50bee541d6eb9a7c0ce/5e6d1a392a15d1bc33192d72",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"5e6cc50bee541d6eb9a7c0ce",
+						"5e6d1a392a15d1bc33192d72"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

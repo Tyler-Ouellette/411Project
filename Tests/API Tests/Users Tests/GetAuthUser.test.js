@@ -15,5 +15,5 @@ test('Get Auth User', () => {
         }
     }));
     
-    
+    https://documenter.getpostman.com/preview/10827403-f5c28f78-9415-4ec7-9fd8-7da385082577?versionTag=latest&apiName=CURRENT&version=latest&top-bar=ffffff&right-sidebar=303030&highlight=ef5b25
 }))
